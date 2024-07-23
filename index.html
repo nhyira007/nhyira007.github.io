@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="My Logo">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="www.linkedin.com/in/nhyira-boateng-375091133" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nhyira007" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+               
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+        
+            <h1 class="typewriter"></h1>
+
+            <p>Showcasing my work and skills as a web developer.</p>
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <img src="images/picture.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hi, I'm Nhyira Akosua Boateng, a passionate and skilled web developer. My expertise spans both front-end and back-end development, allowing me to create dynamic, user-friendly, and visually appealing websites and applications.</p>
+                <h3>Skills:</h3>
+                <ul>
+                    <li><strong>Front-End Development:</strong> HTML, CSS, JavaScript (including ES6+)</li>
+                    <li><strong>Back-End Development:</strong> PHP</li>
+                    <li><strong>Version Control:</strong> Git/GitHub</li>
+                    <li><strong>Web Security Principles:</strong> Ensuring secure and reliable web applications</li>
+                    <li><strong>UX/UI Design Principles:</strong> Creating intuitive and visually appealing interfaces</li>
+                    <li><strong>Testing and Debugging:</strong> Proficient in identifying and fixing issues efficiently</li>
+                </ul>
+                <p>I continuously stay updated with the latest industry trends and technologies to ensure that my skills remain sharp and relevant. Let's collaborate to bring your web projects to life!</p>
+            </div>
+            <div class="about-image">
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio">
+            <h2>My Work</h2>
+            <div class="projects">
+            </div>
+            <div class="project">
+                <h3>Business Website</h3>
+                <img src="Images/bc.jpg" alt="Business Website">
+                <p><strong>BizPro Solutions:</strong> Elevating Your Business Online. This professional business website features a polished layout to showcase services, company information, and client testimonials. The displayed image is a mockup; I am skilled in creating bespoke designs that align with your business goals.</p>
+            </div>
+            <div class="project">
+                <h3>E-commerce Website</h3>
+                <img src="Images/ec.jpg" alt="E-commerce Website">
+                <p><strong>Shop Haven:</strong> The Ultimate Online Shopping Experience. This dynamic e-commerce website includes a product catalog, detailed product pages, a shopping cart, and secure checkout. The image shown is a mockup, and I can create custom designs to fit your brand’s identity.</p>
+        </div>
+        <div class="project">
+            </div>
+            <div class="project">
+                <h3>Event Website</h3>
+                <img src="Images/event.jpg" alt="Event Website">
+                <p><strong>Event Express:</strong> Your Ultimate Event Companion. This comprehensive event management website provides a seamless experience for event organizers and attendees, featuring event listings, detailed event pages, and online registration. The image here is a mockup, but I can design the actual visuals tailored to your needs.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <form action="form.php" method="post"></form>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
