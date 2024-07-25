@@ -7,19 +7,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate data 
     if (!empty($name) && !empty($email) && !empty($message)) {
-        // send email
-        $to = "yboateng19@gmail.com";
+        // Send email (you need to configure your mail server for this)
+        $to = "your-email@example.com";
         $subject = "New Contact Form Submission";
         $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
         $headers = "From: $email";
 
         if (mail($to, $subject, $body, $headers)) {
-            echo "Thank you for contacting us. We will get back to you soon.";
+            echo "Email sent successfully!";
+            header("Location: index.html?status=success");
+            exit();
         } else {
-            echo "Sorry, something went wrong. Please try again later.";
+            echo "Failed to send email.";
+            header("Location: index.html?status=error");
+            exit();
         }
     } else {
-        echo "All fields are required.";
+        echo "Validation failed.";
+        header("Location: index.html?status=invalid");
+        exit();
     }
 } else {
     echo "Invalid request method.";
