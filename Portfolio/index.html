@@ -91,6 +91,17 @@
     <section id="contact">
         <div class="contact">
             <h2>Contact Me</h2>
+            <?php
+                if (isset($_GET['status'])) {
+                    if ($_GET['status'] == 'success') {
+                        echo "<p style='color: green;'>Thank you for contacting us. We will get back to you soon.</p>";
+                    } elseif ($_GET['status'] == 'error') {
+                        echo "<p style='color: red;'>Sorry, something went wrong. Please try again later.</p>";
+                    } elseif ($_GET['status'] == 'invalid') {
+                        echo "<p style='color: red;'>All fields are required.</p>";
+                    }
+                }
+                ?>
             <form action="form.php" method="post"></form>
             <form id="contact-form">
                 <label for="name">Name</label>
