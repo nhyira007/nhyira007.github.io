@@ -7,8 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate data 
     if (!empty($name) && !empty($email) && !empty($message)) {
-        // Send email (you need to configure your mail server for this)
-        $to = "your-email@example.com";
+        // Send email 
+        $to = "yboateng19@gmail.com";
         $subject = "New Contact Form Submission";
         $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
         $headers = "From: $email";
