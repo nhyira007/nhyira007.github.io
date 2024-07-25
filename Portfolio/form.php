@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars(trim($_POST['email']));
     $message = htmlspecialchars(trim($_POST['message']));
 
-    // Validate data (basic example, you may want to add more validation)
+    // Validate data 
     if (!empty($name) && !empty($email) && !empty($message)) {
         // send email
         $to = "yboateng19@gmail.com";
